@@ -27,7 +27,7 @@ def add_task(tasks):
     if task:
         tasks.append(task)
         save_tasks(tasks)
-        print("✅ Task added!")
+        print("Task added!")
 
 def remove_task(tasks):
     show_tasks(tasks)
@@ -36,14 +36,14 @@ def remove_task(tasks):
         if 1 <= index <= len(tasks):
             removed = tasks.pop(index - 1)
             save_tasks(tasks)
-            print(f"🗑️ Removed: {removed}")
+            print(f" Removed: {removed}")
         else:
-            print("⚠️ Invalid task number.")
+            print("Invalid task number.")
     except ValueError:
         print(" Please enter a valid number.")
 
 def main():
-    print("My first code")
+    print("My first code: ")
     tasks = load_tasks()
     while True:
         print("\nTo-Do List Menu :")
