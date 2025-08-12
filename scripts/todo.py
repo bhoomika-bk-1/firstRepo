@@ -40,12 +40,13 @@ def remove_task(tasks):
         else:
             print("⚠️ Invalid task number.")
     except ValueError:
-        print("⚠️ Please enter a valid number.")
+        print(" Please enter a valid number.")
 
 def main():
+    print("My first code")
     tasks = load_tasks()
     while True:
-        print("\n📋 To-Do List Menu:")
+        print("\nTo-Do List Menu :")
         print("1. View tasks")
         print("2. Add task")
         print("3. Remove task")
@@ -59,10 +60,10 @@ def main():
         elif choice == "3":
             remove_task(tasks)
         elif choice == "4":
-            print("👋 Goodbye!")
+            print("Goodbye!")
             break
         else:
-            print("⚠️ Invalid choice. Try again.")
+            print("Invalid choice. Try again.")
 
 if __name__ == "__main__":
     main()
